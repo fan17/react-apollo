@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from '../Home/HomePage';
 import RocketsPage from '../Rocket/RocketsPage';
+import RocketDetailsPage from '../Rocket/RocketDetailsPage';
 import ContactPage from '../Contact/ContactPage';
 import Error404Page from '../Error/Error404Page';
 
@@ -10,7 +11,8 @@ const Main = () => {
         <main>
             <Switch>
                 <Route exact path="/" component={HomePage} />
-                <Route path="/rockets" component={RocketsPage} />
+                <Route exact path="/rockets" component={RocketsPage} />
+                <Route path="/rockets/:id" component={RocketDetailsPage} />
                 <Route path="/contact" component={ContactPage} />
                 <Route component={Error404Page} />
             </Switch>
