@@ -4,7 +4,11 @@ import { NavLink } from 'react-router-dom';
 const SimpleHeader = () => {
     return (
         <header>
-            <NavLink to="/">🚀</NavLink>
+            <NavLink to="/">
+                <span role="img" aria-label="home">
+                    🚀
+                </span>
+            </NavLink>
         </header>
     );
 };
