@@ -14,10 +14,18 @@ export default class RocketList extends Component {
             <div>
                 <h1>List of rockets</h1>
                 <h2>
-                    Currently there are {count} of rockets, {availableCount} of
+                    Currently there are {count} rockets, {availableCount} of
                     them are active.
                 </h2>
-                {children}
+                <div
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'space-around',
+                        flexFlow: 'row wrap'
+                    }}
+                >
+                    {children}
+                </div>
             </div>
         );
     }
