@@ -3,9 +3,9 @@ import { Query } from 'react-apollo';
 import RocketQuery from './RocketQuery';
 import Rocket from './Rocket';
 
-const RocketDetailsPage = ({ match }) => {
+const RocketDetailsPage = ({ id }) => {
     return (
-        <Query query={RocketQuery} variables={{ id: match.params.id }}>
+        <Query query={RocketQuery} variables={{ id }}>
             {({ loading, error, data }) => {
                 if (loading) return <p>Loading...</p>;
                 if (error) return <p>Error :(</p>;
