@@ -42,3 +42,14 @@ p {
 .link:hover {
     color: #f83c29;
 }
+
+.form--submit-button {
+    padding: 10px 5px;
+    background-color: #111;
+    color: #eee;
+    border-radius: 10px;
+    min-width: 100px;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+}
