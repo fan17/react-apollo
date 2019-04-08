@@ -1,5 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+const style = {
+    menuLink: {
+        padding: '0 2em',
+        color: '#eee',
+        textDecoration: 'none',
+        textTransform: 'uppercase'
+    }
+};
 
 export default class SimpleHeader extends React.Component {
     render() {
@@ -21,12 +30,15 @@ export default class SimpleHeader extends React.Component {
                         backgroundPosition: 'right'
                     }}
                 >
-                    <Link to="/">
-                        <img
-                            src="https://www.spacex.com/sites/spacex/files/spacex_logo_white.png"
-                            alt="logo"
-                        />
-                    </Link>
+                    <NavLink style={style.menuLink} to="/">
+                        <span
+                            style={{ fontSize: '32px' }}
+                            role="img"
+                            aria-label="home"
+                        >
+                            🚀
+                        </span>
+                    </NavLink>
                 </div>
             </header>
         );

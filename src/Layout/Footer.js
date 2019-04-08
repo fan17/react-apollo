@@ -15,32 +15,10 @@ export default class Footer extends Component {
                         'url(https://yoursocialstatus.com/wp-content/uploads/2017/01/rocket-1.png)',
                     backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'right'
+                    backgroundPosition: 'right',
+                    minHeight: '500px'
                 }}
-            >
-                <div
-                    style={{
-                        width: '960px',
-                        padding: '0 2em',
-                        backgroundPosition: 'right'
-                    }}
-                >
-                    <div
-                        style={{
-                            display: 'flex',
-                            minHeight: '500px',
-                            alignItems: 'center'
-                        }}
-                    >
-                        <div>
-                            <img
-                                src="https://www.spacex.com/sites/spacex/files/spacex_logo_white.png"
-                                alt="logo"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            />
         );
     }
 }

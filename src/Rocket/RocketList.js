@@ -12,7 +12,7 @@ export default class RocketList extends Component {
         const { count, availableCount, children } = this.props;
         return (
             <div>
-                <h1>List of rockets</h1>
+                <h1>List of SpaceX rockets</h1>
                 <h2>
                     Currently there are {count} rockets, {availableCount} of
                     them are active.

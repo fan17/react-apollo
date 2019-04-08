@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const style = {
     menuLink: {
@@ -30,14 +30,17 @@ export default class FullHeader extends React.Component {
                         backgroundPosition: 'right'
                     }}
                 >
-                    <Link to="/">
-                        <img
-                            src="https://www.spacex.com/sites/spacex/files/spacex_logo_white.png"
-                            alt="logo"
-                        />
-                    </Link>
+                    <NavLink style={style.menuLink} to="/">
+                        <span
+                            style={{ fontSize: '32px' }}
+                            role="img"
+                            aria-label="home"
+                        >
+                            🚀
+                        </span>
+                    </NavLink>
                     <NavLink style={style.menuLink} to="/rockets">
-                        Rockets
+                        SpaceX
                     </NavLink>
                     <NavLink style={style.menuLink} to="/contact">
                         Contact
